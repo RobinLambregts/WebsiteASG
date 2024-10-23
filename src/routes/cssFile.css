@@ -1,0 +1,405 @@
+@import url(./animations.css);
+
+main{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+div{
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+}
+
+#Welkom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    position: relative;
+}
+
+
+#groepsfoto
+{
+    width: 100%;
+}
+
+#Welkomstekst{
+    font-size: 4vw;
+}
+
+#subWelkom{
+    font-size: 2vw;
+}
+
+#tekstvak{
+    position: absolute;
+    z-index: 1;
+}
+
+ul a{
+    color: white;
+    border-radius: 10px;
+    padding: 1vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+li{
+    list-style: none;
+}
+
+#rood{
+    background-color: red;
+}
+
+#wit{
+    background-color:white;
+    padding-block: 2vw;
+}
+
+.tussenTitel{
+    font-weight: bold;
+}
+
+.footer{
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+}
+
+.footer img{
+    width: 15%;
+}
+
+#creator{
+    width: fit-content;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.4vw;
+    padding-left: 1vw;
+}
+
+.witRood{
+    background: linear-gradient(white,red);
+    height: 3vh;
+}
+
+.roodWit{
+    background: linear-gradient(red,white);
+    height: 3vh;
+}
+
+.header {
+    height: 10vh;
+}
+
+#navBar a:hover{
+    color: red;
+    background-color: white;
+}
+
+
+#navBar {
+    background-color: rgba(255, 0, 0, 0.7);
+    display: flex;
+    font-size: 1vw;
+    border-radius: 10px;
+    animation: rollOut 1s ease-out forwards;
+}
+
+#navBar ul a {
+    font-size: 1vw;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    position: fixed;
+    z-index: 2;
+}
+
+@media screen and (max-width: 525px) {
+    li[id="navBar"]{
+        flex-direction: column;
+        text-align: center;
+    }  
+}
+
+                                                    /* voorpagina */
+#knop{
+    color: red;
+    display: flex;
+    font-size: 2vw;
+    margin: 4vw;
+    border-style: solid;
+    border-radius: 30px;
+    padding: 1vw;
+    justify-content: center;
+}
+
+#knop:hover{
+    background-color: red;
+    color: white;
+}
+
+@media screen and (min-width: 700px) {
+    div[id="inschrijven"]{
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }  
+}
+
+@media screen and (max-width: 700px) {
+    div[id="inschrijven"]{
+        height: 40vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }  
+}
+
+#linksBeweeg {
+    transition: transform 1s ease;
+}
+
+#linksBeweeg:hover{
+    animation: beweegL 1s;
+    transform: translateX(-10%);
+}
+
+#rechtsBeweeg {
+    transition: transform 1s ease;
+}
+
+#rechtsBeweeg:hover{
+    animation: beweegR 1s;
+    transform: translateX(10%);
+}
+
+.preasidiumEvenementen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    vertical-align: center;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+
+}
+
+@media screen and (min-width: 700px) {
+    img[id="schild"]{
+        height: 30vh;
+        padding: 5vw;
+    }  
+}
+
+@media screen and (max-width: 700px) {
+    img[id="schild"]{
+        height: 30vw;
+        padding: 2vw;
+    }  
+}
+
+.evenementen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#evenementenTitel{
+    color: white;
+    font-size: 3vw
+}
+
+#foto{
+    width: 40%;
+    position: inline;
+    height: fit-content;
+    align-self: center;
+    border-width: 10px;
+    border-style: solid;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+                                                /* over ons */
+.overOns{
+    display: flex;
+    height: fit-content;
+    font-size: 1.5vw;
+}
+
+.overOns li{
+    margin: 10px;
+    width: 60%;
+    position: inline;
+}
+
+                                                /* preasidium */
+#preasidium {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: red;
+    width: fit-content;
+    padding: 2vw;
+    border-radius: 20px;
+}
+
+                                                /* evenementen */
+
+#evenementen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: red;
+    width: fit-content;
+    padding: 2vw;
+    margin: 2vw;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 700px) {
+    div.lijst {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #evenementen p{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    div.lijst {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #evenementen p{
+        font-size: 2vh;
+        padding: 0.5vh;
+        margin: 0.5vh;
+    }
+}
+                                                    /* contact */
+.kaart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: fit-content;
+    width: 100%;
+}
+
+.kaart li{
+    background-color: red;
+    padding: 5vw;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.kaart li ul{
+    font-size: 1.5vh;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.2vw;
+    padding: 1vw;
+}
+                                                    /* log in */
+.logIn {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.logIn form {
+    background-color: red;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.logIn form label {
+    margin: 5vw;
+    font-size: 2vw;
+}
+
+.logIn form button {
+    background-color: white;
+    width: 40%;
+    margin: 5vw;
+    border-radius: 30px;
+    color: red;
+    border-color: white;
+    border-width: 0.4vw;
+}
+
+#balk {
+    height: 6vw;
+    background-color: darkred;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+    padding-left: 2vw;
+}
+
+                                                        /* eventManager */
+#eventManager form {
+    margin-bottom: 20px;
+}
+                                                        
+#eventManager button {
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+                                                        

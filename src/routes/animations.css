@@ -1,0 +1,28 @@
+@keyframes rollOut {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes beweegL {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-10%);
+    }
+}
+
+@keyframes beweegR {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10%);
+    }
+}
